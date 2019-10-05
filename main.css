@@ -1,3 +1,7 @@
+@font-face {
+	font-family: 'Hussar';
+	src: url('./fonts/HussarBold.otf'); /* IE9 Compat Modes */
+}
 .left{
 	overflow: hidden;
 }
@@ -47,7 +51,14 @@
 	right:-20px;
 	top:6vh;
 }
-
+.resources-title{
+	font-size:32px;
+	color:rgba(72,72,72,0.9);
+	/* letter-spacing: 0.03em; */
+	font-family: Hussar;
+	position: fixed;
+	top:5.2vh;
+}
 
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
