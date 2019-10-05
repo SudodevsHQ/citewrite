@@ -1,0 +1,28 @@
+{
+  "name": "citewrite",
+  "version": "1.0.0",
+  "description": "Submission for KJSCE HACK",
+  "main": "./dist/App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc-watch --onSuccess \"node ./dist/App.js\"",
+    "start":"electron ./dist/App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudodevs-inc/citewrite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudodevs-inc/citewrite/issues"
+  },
+  "homepage": "https://github.com/sudodevs-inc/citewrite#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/node": "^12.7.11",
+    "electron": "^6.0.11",
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.6.3"
+  }
+}
