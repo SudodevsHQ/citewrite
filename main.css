@@ -1,0 +1,39 @@
+
+#editor{
+	height: 94vh;
+	position: fixed;
+	width: 56vw;
+	z-index: -10;
+	left:4vw;
+	top:10vh;
+	background: #1f2537;
+	color: white;
+	border:0;
+}
+
+.ql-toolbar{
+	background-color: #2a2f49;
+	box-shadow: 0 10px 20px -6px rgba(0,0,0,0.25);
+	border:0 !important;
+	color:white;
+	width:56vw;
+	position: absolute;
+	top:0;
+	left:4vw;
+	height: 6vh;
+
+}
+.side-bar{
+	width: 4vw;
+	height: 96vh;
+	background-color: #2a2f49;
+	border:0;
+	top: 0;
+	overflow: hidden;
+}
+.ql-snow .ql-stroke{
+	stroke: rgba(255,255,255,0.8) !important;
+}
+.ql-picker-label{
+	color:rgba(255,255,255,0.8);
+}

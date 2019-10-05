@@ -17,6 +17,7 @@ app.on('ready', function() {
 	mainWindow = new BrowserWindow({
 		'minWidth': 800,
 		'minHeight': 600,
+		"frame":false
 	});
 	mainWindow.maximize();
 	mainWindow.loadURL('file://' + __dirname + '/index.html');

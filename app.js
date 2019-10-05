@@ -1,4 +1,12 @@
 var Quill = require('quill')
+const customTitlebar = require('custom-electron-titlebar');
+ 
+var titleBar = new customTitlebar.Titlebar({
+    backgroundColor: customTitlebar.Color.fromHex('#1d2233')
+});
+
+
+
 var editor = new Quill('#editor', {
     modules: {
       toolbar: [
