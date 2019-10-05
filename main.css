@@ -4,17 +4,19 @@
 }
 .left{
 	overflow: hidden;
+	width: 60vw;
 }
 #editor{
 	height: 94vh;
-	position: fixed;
+	/* position: fixed; */
 	width: 56vw;
-	z-index: -10;
-	left:4vw;
-	top:10vh;
+	/* z-index: -10; */
+	/* left:4vw;
+	top:10vh; */
 	background: #1f2537;
 	color: white;
 	border:0;
+	margin-left: 4vw;
 }
 
 .ql-toolbar{
@@ -22,21 +24,22 @@
 	box-shadow: 0 10px 20px -6px rgba(0,0,0,0.25);
 	border:0 !important;
 	color:white;
-	width:56vw;
-	position: fixed;
+	width:100%;
+	/* position: fixed;
 	top:4vh;
-	left:4vw;
+	left:4vw; */
 	height: 6vh;
 
 }
 .side-bar{
 	width: 4vw;
-	height: 96vh;
+	height: 100%;
 	background-color: #2a2f49;
-	border:0;
-	bottom:0vh;
+	/* border:0; */
+	/* bottom:0vh; */
 	overflow: hidden;
 	position: fixed;
+	left:0;
 }
 .ql-snow .ql-stroke{
 	stroke: rgba(255,255,255,0.8) !important;
