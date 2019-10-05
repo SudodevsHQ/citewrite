@@ -24,6 +24,6 @@
     "electron-packager": "^7.0.1"
   },
   "dependencies": {
-    "quill": "^0.20.1"
+    "quill": "^1.3.7"
   }
 }

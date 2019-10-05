@@ -1,14 +1,15 @@
 var Quill = require('quill')
 var editor = new Quill('#editor', {
-	modules: {
-		toolbar: {container: '#toolbar'},
-		'image-tooltip': true,
-		'link-tooltip': true
-	},
-	theme: 'snow'
-
-});
-
+    modules: {
+      toolbar: [
+        [{ header: [1, 2, false] }],
+        ['bold', 'italic', 'underline'],
+        ['image', 'code-block']
+      ]
+    },
+    placeholder: 'Compose an epic...',
+    theme: 'snow'  // or 'bubble'
+  });
 // Save and Load files
 
 var fs = require('fs');

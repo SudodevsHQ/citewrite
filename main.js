@@ -15,13 +15,10 @@ app.on('window-all-closed', function() {
 
 app.on('ready', function() {
 	mainWindow = new BrowserWindow({
-		'width': 800,
-		'height': 600,
-		'minWidth': 360,
-		'minHeight': 300,
-		'icon': __dirname + '/images/icon.png',
-		'frame': false,
+		'minWidth': 800,
+		'minHeight': 600,
 	});
+	mainWindow.maximize();
 	mainWindow.loadURL('file://' + __dirname + '/index.html');
 	mainWindow.on('closed', function() {
 		mainWindow = null;
