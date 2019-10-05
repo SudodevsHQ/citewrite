@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["es2018"],
+    "lib": ["es2018","dom"],
     "module": "commonjs",
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "outDir": "dist",                         /* Redirect output structure to the directory. */
     "sourceMap": true,

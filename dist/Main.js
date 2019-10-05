@@ -14,9 +14,9 @@ var Main = /** @class */ (function () {
     };
     Main.onReady = function () {
         Main.mainWindow = new Main.BrowserWindow({ width: 800, height: 600 });
-        Main.mainWindow
-            .loadURL('file://' + __dirname + '/index.html');
+        Main.mainWindow.loadURL('file://' + __dirname + '/resources/index.html');
         Main.mainWindow.on('closed', Main.onClose);
+        console.log(__dirname);
     };
     Main.main = function (app, browserWindow) {
         // we pass the Electron.App object and the  

@@ -17,9 +17,9 @@ export default class Main {
 
     private static onReady() {
         Main.mainWindow = new Main.BrowserWindow({ width: 800, height: 600 });
-        Main.mainWindow
-            .loadURL('file://' + __dirname + '/index.html');
+        Main.mainWindow.loadURL('file://' + __dirname + '/resources/index.html');
         Main.mainWindow.on('closed', Main.onClose);
+        console.log(__dirname)
     }
 
     static main(app: Electron.App, browserWindow: typeof BrowserWindow) {
