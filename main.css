@@ -37,3 +37,10 @@
 .ql-picker-label{
 	color:rgba(255,255,255,0.8);
 }
+
+.resources{
+	width:40vw;
+	position: absolute;
+	right:-20px;
+	top:6vh;
+}
