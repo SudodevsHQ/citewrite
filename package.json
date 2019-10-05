@@ -2,9 +2,10 @@
   "name": "citewrite",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/sudodevs-inc/citewrite/issues"
   },
-  "homepage": "https://github.com/sudodevs-inc/citewrite#readme"
+  "homepage": "https://github.com/sudodevs-inc/citewrite#readme",
+  "devDependencies": {
+    "asar": "^0.11.0",
+    "electron": "^1.4.13",
+    "electron-packager": "^7.0.1"
+  },
+  "dependencies": {
+    "quill": "^0.20.1"
+  }
 }
