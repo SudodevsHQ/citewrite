@@ -1,5 +1,6 @@
-
-
+.left{
+	overflow: hidden;
+}
 #editor{
 	height: 94vh;
 	position: fixed;
@@ -29,8 +30,9 @@
 	height: 96vh;
 	background-color: #2a2f49;
 	border:0;
-	top: 0;
+	bottom:0vh;
 	overflow: hidden;
+	position: fixed;
 }
 .ql-snow .ql-stroke{
 	stroke: rgba(255,255,255,0.8) !important;
@@ -44,4 +46,10 @@
 	position: absolute;
 	right:-20px;
 	top:6vh;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
