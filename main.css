@@ -1,4 +1,5 @@
 
+
 #editor{
 	height: 94vh;
 	position: fixed;
@@ -17,8 +18,8 @@
 	border:0 !important;
 	color:white;
 	width:56vw;
-	position: absolute;
-	top:0;
+	position: fixed;
+	top:4vh;
 	left:4vw;
 	height: 6vh;
 
