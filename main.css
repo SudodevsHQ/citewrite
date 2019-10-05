@@ -79,6 +79,11 @@
     display:none;
 }
 
+.card {
+	width: 100%;
+	height: 20%;
+}
+
 .more{
     background:lightblue;
     color:navy;
