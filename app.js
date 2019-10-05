@@ -71,3 +71,37 @@ function readFromFile(editor, filename) {
         editor.setHTML(data);
     });
 }
+
+
+var Delta = Quill.import('delta');
+var startTime = Date.now();
+var interval = Math.floor((Date.now() - startTime) / 1000);;
+var socket = require("./socket");
+var s = new socket();
+
+var change = new Delta();
+editor.on('text-change', function (delta, oldDelta, source) {
+    if (source == 'user') {
+        start = Date.now();
+        var pos = editor.getLength();
+
+        var content = editor.getContents();
+        content = String(content["ops"][0]["insert"]);
+        // console.log(content[content.length-2]);
+        if (content[content.length - 2] === ".") {
+            var text = [... new Set(content.split("."))];
+            var index = text.length - 1;
+            // console.log(text[index - 1]);
+            s.send(text[index - 1])
+        }
+
+
+
+
+        // $.post('/socket-endpoint', { 
+        //    partial: JSON.stringify(change)
+        //});
+        //console.log(Date.now());
+     
+    }
+});

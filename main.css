@@ -74,3 +74,28 @@
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
+
+.complete{
+    display:none;
+}
+
+.more{
+    background:lightblue;
+    color:navy;
+    font-size:13px;
+    padding:3px;
+    cursor:pointer;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
+
+.preloader{
+	height: 100px;
+	margin-top:20px;
+}
+.psvg{
+  width: 75px;
+  height: 75px;
+  margin: auto auto;
+  display:inline-block;
+}

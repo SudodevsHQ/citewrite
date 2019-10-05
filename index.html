@@ -13,26 +13,27 @@
 <div class="window ">
   <div class="left">
 
-   
-      <div class="side-bar">
 
-        </div>
-        <div id="editor">
-       
-          </div>
-        
+    <div class="side-bar">
+
+    </div>
+    <div id="editor">
+
+    </div>
+
   </div>
   <div id="resources">
     <h1 class="resources-title">
       Resources
     </h1>
+    <div id="card-area"></div>
   </div>
 </div>
 <script src="https://cdn.quilljs.com/1.3.6/quill.core.js"></script>
 <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -40,53 +41,7 @@
 <script src="app.js">
 </script>
 
-<script type="text/javascript">
-  var ws = null;
-
-  function init() {
-      if ("WebSocket" in window) {
-          ws = new WebSocket("ws://127.0.0.1:5876/socket/nlp");
-          ws.onopen = function () {
-              console.log("Connection is opened");
-          }
-          ws.onclose = function () {
-              console.log("Connection is closed");
-          }
-          ws.onmessage = function (msg) {
-              document.getElementById("resources").innerHTML = msg.data;
-          }
-      } else {
-          console.log('Your browser doenst support WebSocket!')
-      }
-  }
-
-  function add(data) {
-      for (var j in data) {
-          for (var i in data[j]) {
-              let elem = '<div class="card" style="width: 18rem;">' +
-                  '<img src="' + data[j][i]["image"] + '" class="card-img-top" alt="...">' +
-                  '<div class="card-body">' +
-                  `<h5 class="card-title">${data[j][i]['title']}</h5>` +
-                  `<p class="card-text">${data[j][i]['summary']}</p>` +
-                  `<a href="${data[j][i]['url']}" class="btn btn-primary">Go somewhere</a>` +
-                  '</div>' +
-                  '</div>';
-              $("#resources").append(elem);
-          }
-      }
-
-
-  }
-
-  function send() {
-
-      ws.onmessage = (event) => {
-          console.log("event = " + event);
-          add(JSON.parse(event.data));
-      }
-      ws.send("amoeba");
-
-  }
+<script src="scripts.js">
 </script>
 </body>
 
