@@ -6,6 +6,9 @@
 	overflow: hidden;
 	width: 60vw;
 }
+.container-after-titlebar{
+	overflow: hidden !important;
+}
 #editor{
 	height: 94vh;
 	/* position: fixed; */
@@ -17,6 +20,8 @@
 	color: white;
 	border:0;
 	margin-left: 4vw;
+	overflow: hidden;
+	max-height: 90%;
 }
 
 .ql-toolbar{
@@ -48,11 +53,13 @@
 	color:rgba(255,255,255,0.8);
 }
 
-.resources{
+#resources{
 	width:40vw;
+	max-height: 100%;
 	position: absolute;
 	right:-20px;
 	top:6vh;
+	overflow: scroll;
 }
 .resources-title{
 	font-size:32px;
