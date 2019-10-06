@@ -84,6 +84,9 @@
 .card {
 	width: 100%;
 	height: 20%;
+	background-color: #1f2537 !important;
+	color:rgba(255,255,255,0.9);
+	border-radius: 3px;
 }
 
 .more{
@@ -99,12 +102,14 @@
 .preloader{
 	height: 100px;
 	margin-top:20px;
+
 }
 .psvg{
   width: 75px;
   height: 75px;
   margin: auto auto;
   display:inline-block;
+
 }
 
 .ql-formats:first-of-type{
@@ -131,4 +136,32 @@
 .stop-search img{
 	height: 20px;
 	opacity: .5;
+}
+iframe{
+	height:100%;
+	width: 100%;
+	margin-top:30px;
+}
+#remove{
+	margin-right:-5px;
+	margin-left:5px; 
+}
+.iframe-launcher{
+	background-color:#505b8a !important;
+	border-radius: 5px; 
+}
+.remove-iframe{
+	background-color:#a4333e !important; 
+}
+.save-button{
+
+	background: none !important;
+	border:none !important;
+	padding-top: 10px;
+	height: 18px;
+	width: 18px;
+}
+.save-button img{
+
+	margin-bottom:-60px;
 }

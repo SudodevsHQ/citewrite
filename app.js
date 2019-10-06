@@ -63,7 +63,7 @@ function loadFile() {
 }
 
 function writeToFile(editor, filename) {
-    var html = editor.getHTML();
+    var html = editor.getText();
     fs.writeFile(filename, html, function (err) {
         if (err) {
             return console.log(err);
@@ -76,7 +76,7 @@ function readFromFile(editor, filename) {
         if (err) {
             console.log(err);
         }
-        editor.setHTML(data);
+        editor.getContents(data);
     });
 }
 
@@ -135,4 +135,8 @@ $(".stop-search").click(function(){
         $(".stop-search img").css("opacity","1")
     }
     s.contSend = !s.contSend;
-})
+});
+
+$(document).on('click', '.save-button', function () {
+saveFile()
+});
