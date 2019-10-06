@@ -87,6 +87,7 @@
 	background-color: #1f2537 !important;
 	color:rgba(255,255,255,0.9);
 	border-radius: 3px;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
 }
 
 .more{
@@ -152,6 +153,8 @@ iframe{
 }
 .remove-iframe{
 	background-color:#a4333e !important; 
+	color: white;
+	border:none;
 }
 .save-button{
 
