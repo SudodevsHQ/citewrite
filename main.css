@@ -52,7 +52,9 @@
 .ql-picker-label{
 	color:rgba(255,255,255,0.8);
 }
-
+.ql-editor::placeholder{
+	color: white;
+}
 #resources{
 	width:40vw;
 	max-height: 100%;
@@ -103,4 +105,30 @@
   height: 75px;
   margin: auto auto;
   display:inline-block;
+}
+
+.ql-formats:first-of-type{
+	margin-left:50px;
+}
+
+.specefic-search{
+	margin-top:8vh;
+	background: none;
+	border: none;
+	margin-left:10px
+}
+
+.specefic-search img{
+	height: 20px;
+}
+.stop-search{
+	background: none;
+	border: none;
+	margin-left:10px;
+	margin-top:20px;
+}
+
+.stop-search img{
+	height: 20px;
+	opacity: .5;
 }

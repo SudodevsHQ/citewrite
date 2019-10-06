@@ -3,7 +3,7 @@
 class Socket {
 
   constructor() {
-    console.log("sssssssssssssssssss");
+    this.contSend = true;
     if ("WebSocket" in window) {
       this.ws = new WebSocket("ws://127.0.0.1:5876/socket/nlp");
       this.ws.onopen = function () {
@@ -90,24 +90,25 @@ class Socket {
   </path>
 </svg></div>`
 
-    if ($(".card").length > 0) {
-      // $("#card-area").empty()
-      $(".card").each(function () {
 
-        if (!$(this).hasClass("pinned")) {
-          $(this).remove()
-        }
-      })
+    if (this.contSend) {
+      if ($(".card").length > 0) {
+        // $("#card-area").empty()
+        $(".card").each(function () {
+
+          if (!$(this).hasClass("pinned")) {
+            $(this).remove()
+          }
+        })
+      }
+      $("#card-area").append(preloader)
+
+      this.ws.onmessage = (event) => {
+        console.log("event = " + event);
+        this.add(JSON.parse(event.data));
+      }
+      this.ws.send(text);
     }
-    $("#card-area").append(preloader)
-
-
-    this.ws.onmessage = (event) => {
-      console.log("event = " + event);
-      this.add(JSON.parse(event.data));
-    }
-    this.ws.send(text);
-
   }
 
 }
