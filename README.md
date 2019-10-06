@@ -8,6 +8,13 @@
 
 <h4 align="center">A minimal Text Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
 
+
+<img src="https://cdn.discordapp.com/attachments/540056822435020805/630280237510557716/unknown.png" alt="CiteWrite">
+----
+<img src="https://cdn.discordapp.com/attachments/540056822435020805/630280380905291786/unknown.png" alt="CiteWrite">
+----
+----
+
 <p align="center">NLP (Natural Language Processing) powered Minimal Text Editor App which fetches citations and facts from the internet for the user's reference to save time taken by switching tabs and manually searching for them.</p>
 
 <p align="center">
