@@ -2,9 +2,13 @@
 	font-family: 'Hussar';
 	src: url('./fonts/HussarBold.otf'); /* IE9 Compat Modes */
 }
+
 html{
     overflow: hidden;
 }
+/* body{
+    height: ;
+} */
 h1{
     font-family: Hussar;
     color: rgba(255, 255, 255, 0.9);
