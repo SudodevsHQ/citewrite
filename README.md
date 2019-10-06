@@ -10,10 +10,10 @@
 
 
 <img src="https://cdn.discordapp.com/attachments/540056822435020805/630280237510557716/unknown.png" alt="CiteWrite">
-----
+---
 <img src="https://cdn.discordapp.com/attachments/540056822435020805/630280380905291786/unknown.png" alt="CiteWrite">
-----
-----
+---
+---
 
 <p align="center">NLP (Natural Language Processing) powered Minimal Text Editor App which fetches citations and facts from the internet for the user's reference to save time taken by switching tabs and manually searching for them.</p>
 
@@ -92,6 +92,12 @@ This software uses the following open source packages:
 - [Quilljs](https://github.com/quilljs/quill)
 - [Python 3.6.8](https://www.python.org/)
 - [Tornado](https://tornadoweb.org)
+
+## Areas of Improvement
+
+  - Less computing power causes NLP to takes 4-5 seconds for fetching keywords that are then used to fetch the resources off Wikipedia thus causing decent load times as of now which can be improved with good hardware.
+  - Due to lack of free data APIs, the searching is restricted to Wikipedia only as of now.
+  - UI can always be improved.
 
 ## License
 
